@@ -10,13 +10,13 @@
             <th>Priority</th>
         </tr>
     </thead>
-    @foreach (var item in Bugs)
+    @foreach (var bug in Bugs)
     {
         <tr>
-            <th>@item.Id</th>
-            <th>@item.Title</th>
-            <th>@item.Description</th>
-            <th>@item.Priority</th>
+            <th>@bug.Id</th>
+            <th>@bug.Title</th>
+            <th>@bug.Description</th>
+            <th>@bug.Priority</th>
         </tr>
     }
 </table>
