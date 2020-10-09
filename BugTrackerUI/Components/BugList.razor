@@ -10,17 +10,15 @@
             <th>Priority</th>
         </tr>
     </thead>
-    <tbody>
-        @foreach (var item in Bugs)
-        {
-            <tr>
-                <th>@item.Id</th>
-                <th>@item.Title</th>
-                <th>@item.Description</th>
-                <th>@item.Priority</th>
-            </tr>
-        }
-    </tbody>
+    @foreach (var item in Bugs)
+    {
+        <tr>
+            <th>@item.Id</th>
+            <th>@item.Title</th>
+            <th>@item.Description</th>
+            <th>@item.Priority</th>
+        </tr>
+    }
 </table>
 @code {
 
